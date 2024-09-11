@@ -3,35 +3,35 @@
       "id": 1,
       "name": "Syrupy Portrait",
       "description": "A stylish case for iPhone 7.",
-      "price": 269.00,
+      "price": 20.00,
       "image": "https://via.placeholder.com/200"
     },
     {
       "id": 2,
       "name": "Sweet Art",
       "description": "A stylish case for iPhone 7 Plus.",
-      "price": 269.00,
+      "price": 25.00,
       "image": "https://via.placeholder.com/200"
     },
     {
       "id": 3,
       "name": "Coral on Canvas",
       "description": "A stylish case for iPhone 7 Plus.",
-      "price": 269.00,
+      "price": 25.00,
       "image": "https://via.placeholder.com/200"
     },
     {
       "id": 4,
-      "name": "Color of Poem",
+      "name": "iPhone 7 Plus Case",
       "description": "A stylish case for iPhone 7 Plus.",
-      "price": 269.00,
+      "price": 25.00,
       "image": "https://via.placeholder.com/200"
     },
     {
       "id": 5,
-      "name": "Liberty Cherry",
+      "name": "iPhone 7 Plus Case",
       "description": "A stylish case for iPhone 7 Plus.",
-      "price": 269.00,
+      "price": 25.00,
       "image": "https://via.placeholder.com/200"
     }
   ]

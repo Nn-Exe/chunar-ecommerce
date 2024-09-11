@@ -31,8 +31,6 @@ function Home({ products }) {
       <br />
 
       {/* FAQ Section */}
-
-      <TestimonialCarousel />
       <Faq />  {/* Using the imported Faq component */}
 
       {/* Add more sections here */}

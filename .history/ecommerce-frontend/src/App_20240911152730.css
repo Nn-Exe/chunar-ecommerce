@@ -59,7 +59,6 @@ nav ul li a {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s;
-  border-radius: 20px;
 }
 
 .product-card img {
@@ -110,6 +109,19 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
+/* Product Grid
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+} */
+
 /* About Section */
 .about-section {
   background-color: #f4f4f4;
@@ -158,7 +170,7 @@ nav ul li a {
   width: 100%; /* Make the FAQ item take up 100% of the container */
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease-in-out, background-color 330ms ease-in-out, box-shadow 330ms ease-in-out;
+  transition: background-color 330ms ease-in-out, box-shadow 330ms ease-in-out;
   overflow: hidden; /* Ensure content is hidden initially */
 }
 
@@ -217,7 +229,6 @@ nav ul li a {
 
 /* -----------  TestimonialCarousel ------------- */
 
-
 /* Style for the testimonial section */
 .testimonial-section {
   text-align: center;
@@ -235,35 +246,22 @@ nav ul li a {
 .carousel {
   display: flex;
   overflow: hidden;
+  justify-content: center;
+  scroll-behavior: smooth;
+  transition: transform 0.4s ease-in-out;
   max-width: 100%; /* Ensure full width */
   margin: 0 auto;
 }
 
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: calc(200% * 2); /* Width for two testimonials per slide */
-}
-
-/* Each card wrapper for two cards per slide */
-.testimonial-card-wrapper {
-  display: flex;
-  flex: 0 0 33%; /* Each card takes 50% of the slide width */
-  box-sizing: border-box;
-  padding: 0 10px;
-}
-
 /* Testimonial card styling */
 .testimonial-card {
+  width: 300px;
   background-color: #fff;
   padding: 20px;
-  border-radius: 30px;
+  margin: 0 10px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
-  margin: 0 auto;
-  width: 90%;
-  height: 80%;
-  position: center;
 }
 
 .profile {
@@ -310,5 +308,4 @@ nav ul li a {
 .active {
   background-color: #f39c12;
 }
-
 

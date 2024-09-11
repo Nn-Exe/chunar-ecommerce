@@ -4,9 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // I
 import Navbar from './components/Navbar';  // Correct way to import default export
 import HeroSection from './components/HeroSection';  // Correct way to import default export
 import ProductList from './components/ProductList';  // Correct way to import default export
-import Faq from './components/Faq';  // Import the Faq component from the components folder
-import TestimonialCarousel from './components/TestimonialCarousel'; 
-
 
 // Home page component (the default view)
 function Home({ products }) {
@@ -28,17 +25,11 @@ function Home({ products }) {
         </div>
       </section>
 
-      <br />
-
-      {/* FAQ Section */}
-
-      <TestimonialCarousel />
-      <Faq />  {/* Using the imported Faq component */}
+      <div>
+        <'Frequently asked questions'>
+      </div>
 
       {/* Add more sections here */}
-
-      <br />
-
       <section className="about-section">
         <div className="about-content">
           <h3>About Us</h3>
@@ -48,6 +39,7 @@ function Home({ products }) {
     </div>
   );
 }
+
 
 // Other page components
 function Live() {

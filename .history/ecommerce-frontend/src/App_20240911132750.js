@@ -4,9 +4,57 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // I
 import Navbar from './components/Navbar';  // Correct way to import default export
 import HeroSection from './components/HeroSection';  // Correct way to import default export
 import ProductList from './components/ProductList';  // Correct way to import default export
-import Faq from './components/Faq';  // Import the Faq component from the components folder
-import TestimonialCarousel from './components/TestimonialCarousel'; 
 
+// FAQ Component
+function Faq() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  return (
+    <div className="faq-section">
+      <h2>Frequently asked questions</h2>
+
+      <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFaq(0)}>
+          <span>What is Jubilee?</span>
+          <span className="icon">{activeIndex === 0 ? '-' : '+'}</span>
+        </div>
+        {activeIndex === 0 && (
+          <div className="faq-answer">
+            <p>Jubilee is a dropshipping marketplace that lets you build your own cosmetic and skincare line with minimal upfront costs. You can find high-quality beauty products with customizable attributes like logos and branded invoicing.</p>
+          </div>
+        )}
+      </div>
+
+      <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFaq(1)}>
+          <span>What is private label dropshipping?</span>
+          <span className="icon">{activeIndex === 1 ? '-' : '+'}</span>
+        </div>
+        {activeIndex === 1 && (
+          <div className="faq-answer">
+            <p>Private label dropshipping allows you to sell products from suppliers with your own branding. It’s a great way to promote your brand with minimal effort.</p>
+          </div>
+        )}
+      </div>
+
+      <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFaq(2)}>
+          <span>How can I customize my package?</span>
+          <span className="icon">{activeIndex === 2 ? '-' : '+'}</span>
+        </div>
+        {activeIndex === 2 && (
+          <div className="faq-answer">
+            <p>Private labeling is a great way to showcase your brand! As a retailer, you have the power to control how the packaging of the products will look that will be directly delivered to your customers.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 // Home page component (the default view)
 function Home({ products }) {
@@ -31,14 +79,9 @@ function Home({ products }) {
       <br />
 
       {/* FAQ Section */}
-
-      <TestimonialCarousel />
-      <Faq />  {/* Using the imported Faq component */}
+      <Faq />
 
       {/* Add more sections here */}
-
-      <br />
-
       <section className="about-section">
         <div className="about-content">
           <h3>About Us</h3>

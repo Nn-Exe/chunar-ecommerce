@@ -1,0 +1,220 @@
+/* ------------- Main Structure ------------ */
+
+.App-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.products {
+  padding: 40px;
+  text-align: center;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;   /* Ensures the image covers the given area */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+
+
+/* ----------- Home Div -------------- */
+
+/* App.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Products Section */
+.products-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-header h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Product Grid
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+} */
+
+/* About Section */
+.about-section {
+  background-color: #f4f4f4;
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-section h3 {
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+}
+
+
+/* ----------- FAQ Section ---------------- */
+
+
+/* Center the FAQ section */
+.faq-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Center the FAQ header */
+}
+
+/* Style the header separately */
+.faq-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Grid layout for the FAQ items (excluding the header) */
+.faq-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+  grid-column-gap: 1.125rem;
+  grid-row-gap: 1.125rem;
+  justify-items: center; /* Center the items */
+
+}
+
+/* Style each FAQ item */
+.faq-item {
+  order: 1.13px solid #e5e7eb;
+  border-radius: .75rem;
+  padding: .875rem 1.125rem;
+  text-decoration: none;
+  transition: border-color .2s;
+  box-shadow: 70px 23px 96px -32px #55557c14;
+}
+
+.faq-item:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Style the FAQ question (clickable area) */
+.faq-question {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Style the FAQ answer */
+.faq-answer {
+  padding: 0 20px;
+  overflow: hidden;
+  max-height: 0; /* Initially hidden */
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+}
+
+/* When the FAQ item is active, show the answer with a smooth transition */
+.faq-item.active .faq-answer {
+  max-height: 500px; /* Adjust based on expected content height */
+  opacity: 1;
+  padding-bottom: 20px; /* Add padding for better spacing when expanded */
+}
+
+/* Style the icon for toggling */
+.icon {
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.3s ease; /* Smoothly rotate the icon */
+}
+
+.faq-item.active .icon {
+  transform: rotate(45deg); /* Rotate icon when active */
+}
+
+

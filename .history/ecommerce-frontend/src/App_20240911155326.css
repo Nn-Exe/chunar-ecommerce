@@ -248,7 +248,7 @@ nav ul li a {
 /* Each card wrapper for two cards per slide */
 .testimonial-card-wrapper {
   display: flex;
-  flex: 0 0 33%; /* Each card takes 50% of the slide width */
+  flex: 0 0 50%; /* Each card takes 50% of the slide width */
   box-sizing: border-box;
   padding: 0 10px;
 }
@@ -256,7 +256,7 @@ nav ul li a {
 /* Testimonial card styling */
 .testimonial-card {
   background-color: #fff;
-  padding: 20px;
+  padding: 20px 20px;
   border-radius: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;

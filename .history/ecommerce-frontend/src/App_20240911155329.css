@@ -248,7 +248,7 @@ nav ul li a {
 /* Each card wrapper for two cards per slide */
 .testimonial-card-wrapper {
   display: flex;
-  flex: 0 0 33%; /* Each card takes 50% of the slide width */
+  flex: 0 0 50%; /* Each card takes 50% of the slide width */
   box-sizing: border-box;
   padding: 0 10px;
 }

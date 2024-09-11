@@ -59,7 +59,6 @@ nav ul li a {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s;
-  border-radius: 20px;
 }
 
 .product-card img {
@@ -109,6 +108,19 @@ nav ul li a {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
+/* Product Grid
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+} */
 
 /* About Section */
 .about-section {
@@ -248,7 +260,7 @@ nav ul li a {
 /* Each card wrapper for two cards per slide */
 .testimonial-card-wrapper {
   display: flex;
-  flex: 0 0 33%; /* Each card takes 50% of the slide width */
+  flex: 0 0 50%; /* Each card takes 50% of the slide width */
   box-sizing: border-box;
   padding: 0 10px;
 }
@@ -257,13 +269,11 @@ nav ul li a {
 .testimonial-card {
   background-color: #fff;
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   margin: 0 auto;
-  width: 90%;
-  height: 80%;
-  position: center;
+  width: 100%;
 }
 
 .profile {
