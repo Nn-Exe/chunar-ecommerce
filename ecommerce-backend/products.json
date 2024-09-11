@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "iPhone 7 Case",
+      "description": "A stylish case for iPhone 7.",
+      "price": 20.00,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 7 Plus Case",
+      "description": "A stylish case for iPhone 7 Plus.",
+      "price": 25.00,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 3,
+      "name": "iPhone 7 Plus Case",
+      "description": "A stylish case for iPhone 7 Plus.",
+      "price": 25.00,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 4,
+      "name": "iPhone 7 Plus Case",
+      "description": "A stylish case for iPhone 7 Plus.",
+      "price": 25.00,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 5,
+      "name": "iPhone 7 Plus Case",
+      "description": "A stylish case for iPhone 7 Plus.",
+      "price": 25.00,
+      "image": "https://via.placeholder.com/200"
+    }
+  ]
+  
