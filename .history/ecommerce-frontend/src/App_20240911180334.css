@@ -228,12 +228,9 @@ nav ul li a {
 /* Style for the testimonial section */
 .testimonial-section {
   text-align: center;
-  /* max-width: 800px; */
+  max-width: 800px;
   margin: 0 auto;
   padding: 50px 0;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  width: 70%
 }
 
 .testimonial-section h2 {
@@ -258,7 +255,7 @@ nav ul li a {
 /* Each card wrapper for two cards per slide */
 .testimonial-card-wrapper {
   display: flex;
-  flex: 0 0 50%; /* Each card takes 50% of the slide width */
+  flex: 0 0 20%; /* Each card takes 50% of the slide width */
   box-sizing: border-box;
   padding: 0 10px;
 }
@@ -274,7 +271,6 @@ nav ul li a {
   width: 90%;
   height: 80%;
   position: center;
-  
 }
 
 .profile {

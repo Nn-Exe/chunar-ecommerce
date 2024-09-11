@@ -5,7 +5,7 @@ function HeroSection() {
     <section className="hero">
       <img src="https://raw.githubusercontent.com/Nn-Exe/chunar-images/master/banner/chunar%20banner.png" alt="Banner" className="hero-banner" />
       <div className="hero-text">
-        {/* <h2>Three things cannot be long hidden: The Sun, The Moon, and The Truth.</h2> */}
+        <h2>Three things cannot be long hidden: The Sun, The Moon, and The Truth.</h2>
       </div>
     </section>
   );

@@ -28,6 +28,36 @@ const TestimonialCarousel = () => {
       title: 'Shopify Store Owner',
       text: '“Jubilee is a great choice for entrepreneurs looking to build their own brand.”',
       stars: 5,
+    },
+    {
+      name: 'Final Testimonial',
+      title: 'Shopify Store Owner',
+      text: '“Jubilee is a great choice for entrepreneurs looking to build their own brand.”',
+      stars: 5,
+    },
+    {
+      name: 'Final Testimonial',
+      title: 'Shopify Store Owner',
+      text: '“Jubilee is a great choice for entrepreneurs looking to build their own brand.”',
+      stars: 5,
+    },
+    {
+      name: 'Final Testimonial',
+      title: 'Shopify Store Owner',
+      text: '“Jubilee is a great choice for entrepreneurs looking to build their own brand.”',
+      stars: 5,
+    },
+    {
+      name: 'Final Testimonial',
+      title: 'Shopify Store Owner',
+      text: '“Jubilee is a great choice for entrepreneurs looking to build their own brand.”',
+      stars: 5,
+    },
+    {
+      name: 'Final Testimonial',
+      title: 'Shopify Store Owner',
+      text: '“Jubilee is a great choice for entrepreneurs looking to build their own brand.”',
+      stars: 5,
     }
   ];
 
