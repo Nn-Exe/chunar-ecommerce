@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 const TestimonialCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -10,39 +9,40 @@ const TestimonialCarousel = () => {
       title: 'Chunar.Co Store Owner',
       text: '“I can’t say enough good things about Chunar. Elegant packaging and even more stunning shades—Chunar.Co lipsticks are a must-have!”',
       stars: 5,
+      image: 'https://github.com/Nn-Exe/chunar-images/blob/master/testimonial/fern.jpg?raw=true', // Example image URL
     },
     {
       name: 'Supapis Permsuk',
       title: 'Chunar.Co Store Owner',
       text: '“Chunar.Co lipsticks feel luxurious and keep your lips hydrated all day!”',
       stars: 5,
+      image: 'https://github.com/Nn-Exe/chunar-images/blob/master/testimonial/fah.jpg?raw=true', // Example image URL
     },
     {
       name: 'yingrin19',
       title: 'Shopee Reviewer',
       text: '“Chunar.Co lipstick delivers vibrant, long-lasting color with a smooth finish!”',
       stars: 4,
+      image: 'https://github.com/Nn-Exe/chunar-images/blob/master/testimonial/ai%20review.jpg?raw=true', // Example image URL
     },
     {
       name: 'Anabella',
       title: 'Tiktok Testimonial',
       text: 'Bold, beautiful, and made to last—Chunar.Co lipstick is perfection in a tube!”',
       stars: 5,
+      image: 'https://github.com/Nn-Exe/chunar-images/blob/master/testimonial/ai%20review2.jpg?raw=true', // Example image URL
     }
   ];
 
-  // Calculate the number of slides needed (two testimonials per slide)
   const totalSlides = Math.ceil(testimonials.length / 2);
 
-  // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-    }, 4000); // Slide every 4 seconds
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    }, 4000);
+    return () => clearInterval(interval);
   }, [totalSlides]);
 
-  // Function to move the slides manually
   const moveSlide = (index) => {
     setCurrentSlide(index);
   };
@@ -54,7 +54,7 @@ const TestimonialCarousel = () => {
         <div
           className="carousel-inner"
           style={{
-            transform: `translateX(-${currentSlide * 100}%)`, // Move by 100% per slide
+            transform: `translateX(-${currentSlide * 100}%)`,
           }}
         >
           {testimonials.map((testimonial, index) => (
@@ -62,8 +62,8 @@ const TestimonialCarousel = () => {
               <div className="testimonial-card">
                 <div className="profile">
                   <img
-                    src="https://via.placeholder.com/50"
-                    alt="Profile"
+                    src={testimonial.image} // Dynamic image from the testimonial object
+                    alt={`${testimonial.name} profile`} // Descriptive alt text
                   />
                   <div className="profile-details">
                     <h4>{testimonial.name}</h4>
@@ -80,7 +80,6 @@ const TestimonialCarousel = () => {
         </div>
       </div>
 
-      {/* Dots for navigation */}
       <div className="dots">
         {[...Array(totalSlides)].map((_, index) => (
           <span
