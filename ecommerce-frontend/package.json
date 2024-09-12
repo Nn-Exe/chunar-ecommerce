@@ -2,8 +2,7 @@
   "name": "ecommerce-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Nn-Exe/chunar-ecommerce",
-  
+  "homepage": "https://nn-exe.github.io/chunar-ecommerce",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
@@ -25,7 +24,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -43,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
