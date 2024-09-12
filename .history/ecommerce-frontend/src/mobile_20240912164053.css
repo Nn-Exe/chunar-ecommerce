@@ -1,0 +1,9 @@
+.App-header {
+  background-color: white;
+  color: black;
+  padding: 10px; /* Reduced padding for mobile */
+  text-align: center; /* Ensures text is centered */
+  width: 100%; /* Makes sure it spans the full width of the screen */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+  margin: 0 auto; /* Centering any content */
+}

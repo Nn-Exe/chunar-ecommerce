@@ -542,18 +542,17 @@ nav ul li a {
 
 
   .link-block {
-    grid-column: unset !important; /* Remove from grid column */
-    grid-row: unset !important; /* Remove from grid row */
-    display: block !important; /* Make it behave independently from the grid */
-    width: 100% !important; /* Full width on mobile */
-    margin: 10px 0 !important; /* Add margin for spacing */
-  }
-
-  .links-container {
-    display: flex !important; /* Use flexbox */
-    flex-wrap: wrap !important; /* Allow items to wrap */
-    justify-content: center !important; /* Center the link blocks */
-    gap: 10px !important; /* Add space between link blocks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%; /* Full width */
+    background-color: #e89ea1;
+    color: black;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
 }

@@ -490,15 +490,6 @@ nav ul li a {
   /* Large video on the left */
   .large-item {
     grid-column: 1 / 2;
-    display: flex; /* Apply flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 5px;
-    transform: scale(1.02); /* Increase size by 5% */
-  }  
-
-  .image-item img[alt="Image 1"] {
-    display: none; /* Hide the image with alt="Image 1" */
   }
 
   /* Image on the right, next to large video */
@@ -510,7 +501,7 @@ nav ul li a {
   }
 
   .image-item img {
-    width: 85%; /* Ensure the image takes up the full column */
+    width: 80%; /* Ensure the image takes up the full column */
     height: auto; /* Keep aspect ratio */
     object-fit: cover;
   }
@@ -522,10 +513,6 @@ nav ul li a {
     grid-template-columns: 1fr 1fr; /* Two columns: small video and social media link */
     gap: 10px;
     margin-top: 20px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 5px;
-    padding-right: 5px;
   }
 
   .small-item {
@@ -535,25 +522,23 @@ nav ul li a {
   }
 
   .small-item .grid-video {
-    height: auto; /* Automatically adjusts the height based on the aspect ratio */
-    width: 100%; /* Take up the full width of the container */
-    aspect-ratio: 3 / 4; /* Maintain the 3:4 aspect ratio */
+    height: 100px; /* Set smaller height for small videos */
+    width: 100%;
+    aspect-ratio: 3 / 4; /* Set aspect ratio for small videos */
   }
-
 
   .link-block {
-    grid-column: unset !important; /* Remove from grid column */
-    grid-row: unset !important; /* Remove from grid row */
-    display: block !important; /* Make it behave independently from the grid */
-    width: 100% !important; /* Full width on mobile */
-    margin: 10px 0 !important; /* Add margin for spacing */
-  }
-
-  .links-container {
-    display: flex !important; /* Use flexbox */
-    flex-wrap: wrap !important; /* Allow items to wrap */
-    justify-content: center !important; /* Center the link blocks */
-    gap: 10px !important; /* Add space between link blocks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%; /* Full width */
+    background-color: #e89ea1;
+    color: black;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
 }

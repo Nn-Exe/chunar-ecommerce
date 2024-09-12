@@ -345,6 +345,8 @@ nav ul li a {
 /* Large video on the left */
 .large-item {
   position: relative;
+  /* display: flex;
+  justify-content: center; */
 }
 
 /* Small videos next to the large video */
@@ -421,11 +423,9 @@ nav ul li a {
   font-size: 24px;
 }
 
-/* --------------- Mobile ---------------------------- */
-
 @media (max-width: 768px) {
   /* Mobile Styles */
-
+  
   .App-header {
     background-color: white;
     color: black;
@@ -437,123 +437,21 @@ nav ul li a {
   }
 
   nav ul {
-    flex-direction: row; /* Stack items vertically on mobile */
+    flex-direction: column; /* Stack items vertically on mobile */
     gap: 10px;
   }
 
   nav ul li a {
-    font-size: 12px; /* Reduce font size for mobile */
+    font-size: 14px; /* Reduce font size for mobile */
   }
 
-  .hero-banner {
-    height: 150px; /* Reduce the height for mobile */
-    object-fit: cover; /* Ensures the image scales properly */
-  }
   .products {
-    padding: 20px; /* Maintain smaller padding for mobile */
+    padding: 20px; /* Smaller padding for mobile */
   }
 
   .product-list {
     grid-template-columns: repeat(2, 1fr); /* 2 products per row on mobile */
     gap: 15px;
-  }
-
-  .product-card {
-    min-height: 240px; /* Reduced min-height to make the cards more compact */
-    padding: 10px; /* Slightly reduced padding */
-    box-sizing: border-box; /* Ensure padding is included in the total size */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensures content is aligned properly */
-  }
-
-  .product-card img {
-    height: 100px; /* Reduced image height to fit within the smaller product card */
-    width: auto;
-    object-fit: cover; /* Maintain aspect ratio */
-  }
-
-  .product-card p {
-    margin-top: 8px; /* Slightly reduced margin */
-    word-wrap: break-word; /* Ensure long text wraps correctly */
-  }
-
-  /* Adjust the layout to two columns for large video and image */
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: large video on the left, image on the right */
-    gap: 10px;
-    max-width: 100%; /* Full width for mobile */
-    margin: 0 auto;
-  }
-
-  /* Large video on the left */
-  .large-item {
-    grid-column: 1 / 2;
-    display: flex; /* Apply flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 5px;
-    transform: scale(1.02); /* Increase size by 5% */
-  }  
-
-  .image-item img[alt="Image 1"] {
-    display: none; /* Hide the image with alt="Image 1" */
-  }
-
-  /* Image on the right, next to large video */
-  .image-item {
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .image-item img {
-    width: 85%; /* Ensure the image takes up the full column */
-    height: auto; /* Keep aspect ratio */
-    object-fit: cover;
-  }
-
-  /* Small videos paired with social media links below */
-  .small-items {
-    grid-column: 1 / -1; /* Span across both columns */
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: small video and social media link */
-    gap: 10px;
-    margin-top: 20px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .small-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .small-item .grid-video {
-    height: auto; /* Automatically adjusts the height based on the aspect ratio */
-    width: 100%; /* Take up the full width of the container */
-    aspect-ratio: 3 / 4; /* Maintain the 3:4 aspect ratio */
-  }
-
-
-  .link-block {
-    grid-column: unset !important; /* Remove from grid column */
-    grid-row: unset !important; /* Remove from grid row */
-    display: block !important; /* Make it behave independently from the grid */
-    width: 100% !important; /* Full width on mobile */
-    margin: 10px 0 !important; /* Add margin for spacing */
-  }
-
-  .links-container {
-    display: flex !important; /* Use flexbox */
-    flex-wrap: wrap !important; /* Allow items to wrap */
-    justify-content: center !important; /* Center the link blocks */
-    gap: 10px !important; /* Add space between link blocks */
   }
 
 }

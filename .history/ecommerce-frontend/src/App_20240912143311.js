@@ -51,6 +51,7 @@ function Home({ products }) {
   );
 }
 
+<SocialMedia />
 
 function Contacts() {
   return <h2>Contacts Page</h2>;
@@ -85,7 +86,7 @@ function App() {
           <Route path="/" element={<Home products={products} />} />
           
           {/* Other pages */}
-          {/* <Route path="/SocialMedia" element={<SocialMedia />} /> */}
+          <Route path="/SocialMedia" element={<SocialMedia />} />
           <Route path="/contacts" element={<Contacts />} />
           
           {/* Redirect to external social media link

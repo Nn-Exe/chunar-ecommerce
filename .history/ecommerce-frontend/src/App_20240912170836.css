@@ -478,82 +478,46 @@ nav ul li a {
     word-wrap: break-word; /* Ensure long text wraps correctly */
   }
 
-  /* Adjust the layout to two columns for large video and image */
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: large video on the left, image on the right */
-    gap: 10px;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for the large video and stacked images */
+    gap: 10px; /* Reduce the gap between columns */
     max-width: 100%; /* Full width for mobile */
     margin: 0 auto;
   }
 
-  /* Large video on the left */
-  .large-item {
-    grid-column: 1 / 2;
-    display: flex; /* Apply flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 5px;
-    transform: scale(1.02); /* Increase size by 5% */
-  }  
-
-  .image-item img[alt="Image 1"] {
-    display: none; /* Hide the image with alt="Image 1" */
+  .large-item .grid-video {
+    aspect-ratio: 9 / 16; /* Keep the large video 9:16 */
+    height: 100%; /* Ensure it takes the full height */
   }
 
-  /* Image on the right, next to large video */
-  .image-item {
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .image-item img {
-    width: 85%; /* Ensure the image takes up the full column */
-    height: auto; /* Keep aspect ratio */
-    object-fit: cover;
-  }
-
-  /* Small videos paired with social media links below */
+  /* Stack small items vertically on the right */
   .small-items {
-    grid-column: 1 / -1; /* Span across both columns */
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: small video and social media link */
-    gap: 10px;
-    margin-top: 20px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .small-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Stack the small items */
+    gap: 10px; /* Reduce gap between stacked small items */
+    justify-content: flex-start; /* Align them at the top */
   }
 
   .small-item .grid-video {
-    height: auto; /* Automatically adjusts the height based on the aspect ratio */
-    width: 100%; /* Take up the full width of the container */
-    aspect-ratio: 3 / 4; /* Maintain the 3:4 aspect ratio */
+    aspect-ratio: 1 / 1; /* Make the small items square (adjust as necessary) */
+    height: 100px; /* Set a fixed height for the small videos */
+    width: 100%; /* Full width */
   }
 
-
-  .link-block {
-    grid-column: unset !important; /* Remove from grid column */
-    grid-row: unset !important; /* Remove from grid row */
-    display: block !important; /* Make it behave independently from the grid */
-    width: 100% !important; /* Full width on mobile */
-    margin: 10px 0 !important; /* Add margin for spacing */
+  /* Social media links styling */
+  .social-media {
+    flex-direction: column; /* Stack social media links vertically */
+    margin-top: 20px; /* Add margin to separate from the video grid */
   }
 
   .links-container {
-    display: flex !important; /* Use flexbox */
-    flex-wrap: wrap !important; /* Allow items to wrap */
-    justify-content: center !important; /* Center the link blocks */
-    gap: 10px !important; /* Add space between link blocks */
+    gap: 10px; /* Reduce gap between social media links */
+  }
+
+  .link-block {
+    padding: 10px; /* Smaller padding for mobile */
+    font-size: 1rem; /* Slightly smaller text size */
+    width: 100%; /* Make links full width */
   }
 
 }

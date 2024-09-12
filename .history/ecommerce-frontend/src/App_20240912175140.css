@@ -542,18 +542,17 @@ nav ul li a {
 
 
   .link-block {
-    grid-column: unset !important; /* Remove from grid column */
-    grid-row: unset !important; /* Remove from grid row */
-    display: block !important; /* Make it behave independently from the grid */
-    width: 100% !important; /* Full width on mobile */
-    margin: 10px 0 !important; /* Add margin for spacing */
+    grid-column: auto / span 1; /* Override the grid position */
+    display: block; /* Ensure it behaves independently of the grid */
+    width: 100%; /* Full width of its container */
+    margin-top: 20px; /* Add margin to separate from the grid items */
   }
 
   .links-container {
-    display: flex !important; /* Use flexbox */
-    flex-wrap: wrap !important; /* Allow items to wrap */
-    justify-content: center !important; /* Center the link blocks */
-    gap: 10px !important; /* Add space between link blocks */
+    display: flex; /* Use flexbox to handle the layout */
+    flex-wrap: wrap; /* Allow the link blocks to wrap into multiple lines */
+    justify-content: center; /* Center the link blocks */
+    gap: 10px; /* Space between each link block */
   }
 
 }

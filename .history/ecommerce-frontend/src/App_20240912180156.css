@@ -542,7 +542,7 @@ nav ul li a {
 
 
   .link-block {
-    grid-column: unset !important; /* Remove from grid column */
+    grid-column: auto / span 1 !important; /* Remove from grid column */
     grid-row: unset !important; /* Remove from grid row */
     display: block !important; /* Make it behave independently from the grid */
     width: 100% !important; /* Full width on mobile */
