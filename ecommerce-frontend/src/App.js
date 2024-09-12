@@ -78,7 +78,7 @@ function App() {
     <Router  basename="/chunar-ecommerce">
       <div className="App">
         <header className="App-header">
-          <h1>Chunar.Co</h1>
+          {/* <h1>Chunar.Co</h1> */}
           <Navbar />
         </header>
 
