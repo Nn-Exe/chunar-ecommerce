@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chunar-ecommerce/static/css/main.12ae9ec7.css",
-    "main.js": "/chunar-ecommerce/static/js/main.9cd76135.js",
+    "main.js": "/chunar-ecommerce/static/js/main.cb44ea2a.js",
     "static/js/453.3f74345f.chunk.js": "/chunar-ecommerce/static/js/453.3f74345f.chunk.js",
     "index.html": "/chunar-ecommerce/index.html",
     "main.12ae9ec7.css.map": "/chunar-ecommerce/static/css/main.12ae9ec7.css.map",
-    "main.9cd76135.js.map": "/chunar-ecommerce/static/js/main.9cd76135.js.map",
+    "main.cb44ea2a.js.map": "/chunar-ecommerce/static/js/main.cb44ea2a.js.map",
     "453.3f74345f.chunk.js.map": "/chunar-ecommerce/static/js/453.3f74345f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12ae9ec7.css",
-    "static/js/main.9cd76135.js"
+    "static/js/main.cb44ea2a.js"
   ]
 }
