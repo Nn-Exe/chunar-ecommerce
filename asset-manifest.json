@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nn-Exe/chunar-ecommerce/static/css/main.12ae9ec7.css",
+    "main.js": "/Nn-Exe/chunar-ecommerce/static/js/main.72604c66.js",
+    "static/js/453.3f74345f.chunk.js": "/Nn-Exe/chunar-ecommerce/static/js/453.3f74345f.chunk.js",
+    "index.html": "/Nn-Exe/chunar-ecommerce/index.html",
+    "main.12ae9ec7.css.map": "/Nn-Exe/chunar-ecommerce/static/css/main.12ae9ec7.css.map",
+    "main.72604c66.js.map": "/Nn-Exe/chunar-ecommerce/static/js/main.72604c66.js.map",
+    "453.3f74345f.chunk.js.map": "/Nn-Exe/chunar-ecommerce/static/js/453.3f74345f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12ae9ec7.css",
+    "static/js/main.72604c66.js"
+  ]
+}
