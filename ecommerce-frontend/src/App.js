@@ -45,7 +45,8 @@ function Home({ products }) {
       <section className="about-section">
         <div className="about-content">
           <h3>About Us</h3>
-          <p>Learn more about our company and our mission.</p>
+          <p>COPYRIGHT 2024. CHUNAR.CO ALL RIGHTS RESERVED.</p>
+          <p>Tel. +6698-271-0986</p>
         </div>
       </section>
     </div>
@@ -77,7 +78,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Chunar.Co</h1>
+          {/* <h1>Chunar.Co</h1> */}
           <Navbar />
         </header>
 

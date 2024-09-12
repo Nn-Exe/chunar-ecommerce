@@ -15,7 +15,7 @@ const VideoGridAndSocial = () => {
   };
 
   return (
-    <div className="grid-container">
+    <div className="grid-container video-grid-section">
       {/* Large video on the left */}
       <div className="large-item">
         <iframe
@@ -72,7 +72,7 @@ const VideoGridAndSocial = () => {
         <h1>Shop & Follow</h1>
         <div className="links-container">
           <a
-            href="https://shopee.com/"
+            href="https://shopee.co.th/chunar.co"
             target="_blank"
             rel="noopener noreferrer"
             className="link-block"
@@ -88,7 +88,7 @@ const VideoGridAndSocial = () => {
           </a>
 
           <a
-            href="https://www.tiktok.com/"
+            href="https://vt.tiktok.com/ZS2JmRmBG/"
             target="_blank"
             rel="noopener noreferrer"
             className="link-block"
@@ -100,7 +100,7 @@ const VideoGridAndSocial = () => {
           </a>
 
           <a
-            href="https://line.me/en/"
+            href="https://line.me/R/ti/p/@611lcunj?ts=07081618&oat_content=url"
             target="_blank"
             rel="noopener noreferrer"
             className="link-block"
@@ -112,7 +112,7 @@ const VideoGridAndSocial = () => {
           </a>
 
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/profile.php?id=61561888330506&mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
             className="link-block"
@@ -124,7 +124,7 @@ const VideoGridAndSocial = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/Chunar.Co/"
             target="_blank"
             rel="noopener noreferrer"
             className="link-block"

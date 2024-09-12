@@ -8,25 +8,25 @@ const TestimonialCarousel = () => {
     {
       name: 'Supisara Permsuk',
       title: 'Chunar.Co Store Owner',
-      text: '“I can’t say enough good things about Chunar. Our dropshipping model is efficient, and the product quality is excellent...”',
+      text: '“I can’t say enough good things about Chunar. Elegant packaging and even more stunning shades—Chunar.Co lipsticks are a must-have!”',
       stars: 5,
     },
     {
       name: 'Supapis Permsuk',
       title: 'Chunar.Co Store Owner',
-      text: '“Starting my own beauty brand seemed daunting, but Jubilee made it incredibly easy. The customization options are fantastic...”',
+      text: '“Chunar.Co lipsticks feel luxurious and keep your lips hydrated all day!”',
       stars: 5,
     },
     {
-      name: 'Another Testimonial',
-      title: 'Shopify Store Owner',
-      text: '“Another positive review about how amazing Jubilee is.”',
+      name: 'yingrin19',
+      title: 'Shopee Reviewer',
+      text: '“Chunar.Co lipstick delivers vibrant, long-lasting color with a smooth finish!”',
       stars: 4,
     },
     {
-      name: 'Final Testimonial',
-      title: 'Shopify Store Owner',
-      text: '“Jubilee is a great choice for entrepreneurs looking to build their own brand.”',
+      name: 'Anabella',
+      title: 'Tiktok Testimonial',
+      text: 'Bold, beautiful, and made to last—Chunar.Co lipstick is perfection in a tube!”',
       stars: 5,
     }
   ];
