@@ -7,7 +7,6 @@ import ProductList from './components/ProductList';  // Correct way to import de
 import Faq from './components/Faq';  // Import the Faq component from the components folder
 import TestimonialCarousel from './components/TestimonialCarousel'; 
 import SocialMedia from './components/SocialMedia'; 
-import VideoGrid from './components/VideoGrid'; 
 
 
 // Home page component (the default view)
@@ -34,7 +33,6 @@ function Home({ products }) {
 
       {/* FAQ Section */}
 
-      <VideoGrid/>
       <TestimonialCarousel />
       <Faq />  {/* Using the imported Faq component */}
 

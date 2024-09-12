@@ -278,7 +278,7 @@ nav ul li a {
   text-align: left;
   margin: 0 auto;
   width: 90%;
-  height: 90%;
+  height: 80%;
   position: center;
   border-color: #e89ea1;
 }
@@ -326,62 +326,6 @@ nav ul li a {
 
 .active {
   background-color: #f39c12;
-}
-
-
-/* --------------- VideoGrid -------------------- */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr; /* Adjust proportion to reduce large video size */
-  gap: 20px;
-  max-width: 1000px; /* Reduce the maximum width for the overall grid */
-  margin: 0 auto;
-}
-
-.large-item {
-  position: relative;
-}
-
-.small-items {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.small-item {
-  position: relative;
-}
-
-.grid-video {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.large-item .grid-video {
-  aspect-ratio: 9 / 16; /* 9:16 aspect ratio for the large video */
-}
-
-.small-item .grid-video {
-  aspect-ratio: 3 / 4; /* 3:4 aspect ratio for the small videos */
-}
-
-/* .dot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid black;
-  cursor: pointer;
-} */
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Stacks everything vertically on smaller screens */
-  }
 }
 
 

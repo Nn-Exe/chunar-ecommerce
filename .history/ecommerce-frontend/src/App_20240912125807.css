@@ -278,7 +278,7 @@ nav ul li a {
   text-align: left;
   margin: 0 auto;
   width: 90%;
-  height: 90%;
+  height: 100%;
   position: center;
   border-color: #e89ea1;
 }
@@ -331,11 +331,23 @@ nav ul li a {
 
 /* --------------- VideoGrid -------------------- */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; /* Adjust proportion to reduce large video size */
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
-  max-width: 1000px; /* Reduce the maximum width for the overall grid */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -355,16 +367,9 @@ nav ul li a {
 
 .grid-video {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.large-item .grid-video {
-  aspect-ratio: 9 / 16; /* 9:16 aspect ratio for the large video */
-}
-
-.small-item .grid-video {
-  aspect-ratio: 3 / 4; /* 3:4 aspect ratio for the small videos */
 }
 
 /* .dot {
@@ -380,8 +385,6 @@ nav ul li a {
 /* Responsive Design */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Stacks everything vertically on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
-
-

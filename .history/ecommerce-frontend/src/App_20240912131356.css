@@ -330,12 +330,11 @@ nav ul li a {
 
 
 /* --------------- VideoGrid -------------------- */
-
 .grid-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; /* Adjust proportion to reduce large video size */
+  grid-template-columns: 2fr 1fr; /* Large on the left, smaller on the right */
   gap: 20px;
-  max-width: 1000px; /* Reduce the maximum width for the overall grid */
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -346,7 +345,7 @@ nav ul li a {
 .small-items {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; /* Adds space between the small videos */
 }
 
 .small-item {
@@ -383,5 +382,4 @@ nav ul li a {
     grid-template-columns: 1fr; /* Stacks everything vertically on smaller screens */
   }
 }
-
 

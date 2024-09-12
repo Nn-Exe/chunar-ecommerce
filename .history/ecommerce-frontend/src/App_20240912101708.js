@@ -6,8 +6,6 @@ import HeroSection from './components/HeroSection';  // Correct way to import de
 import ProductList from './components/ProductList';  // Correct way to import default export
 import Faq from './components/Faq';  // Import the Faq component from the components folder
 import TestimonialCarousel from './components/TestimonialCarousel'; 
-import SocialMedia from './components/SocialMedia'; 
-import VideoGrid from './components/VideoGrid'; 
 
 
 // Home page component (the default view)
@@ -34,7 +32,6 @@ function Home({ products }) {
 
       {/* FAQ Section */}
 
-      <VideoGrid/>
       <TestimonialCarousel />
       <Faq />  {/* Using the imported Faq component */}
 
@@ -52,7 +49,10 @@ function Home({ products }) {
   );
 }
 
-<SocialMedia />
+// Other page components
+function Live() {
+  return <h2>Live Page</h2>;
+}
 
 function Contacts() {
   return <h2>Contacts Page</h2>;
@@ -87,7 +87,7 @@ function App() {
           <Route path="/" element={<Home products={products} />} />
           
           {/* Other pages */}
-          <Route path="/SocialMedia" element={<SocialMedia />} />
+          <Route path="/socialmedia" element={<SocialMedia />} />
           <Route path="/contacts" element={<Contacts />} />
           
           {/* Redirect to external social media link

@@ -333,14 +333,16 @@ nav ul li a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; /* Adjust proportion to reduce large video size */
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
-  max-width: 1000px; /* Reduce the maximum width for the overall grid */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .large-item {
   position: relative;
+  /* Aspect ratio for large video: 9:16 */
+  padding-bottom: calc(16 / 9 * 100%); /* Maintain aspect ratio */
 }
 
 .small-items {
@@ -351,20 +353,18 @@ nav ul li a {
 
 .small-item {
   position: relative;
+  /* Aspect ratio for small videos: 3:4 */
+  padding-bottom: calc(4 / 3 * 100%); /* Maintain aspect ratio */
 }
 
 .grid-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.large-item .grid-video {
-  aspect-ratio: 9 / 16; /* 9:16 aspect ratio for the large video */
-}
-
-.small-item .grid-video {
-  aspect-ratio: 3 / 4; /* 3:4 aspect ratio for the small videos */
 }
 
 /* .dot {
@@ -380,8 +380,7 @@ nav ul li a {
 /* Responsive Design */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Stacks everything vertically on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
-
 

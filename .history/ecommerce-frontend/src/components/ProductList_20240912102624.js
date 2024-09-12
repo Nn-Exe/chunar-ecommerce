@@ -15,7 +15,7 @@ function ProductList({ products }) {
               />
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <p>{product.price} ฿</p>
+            <p>{product.price}฿</p>
           </div>
         ))
       )}
