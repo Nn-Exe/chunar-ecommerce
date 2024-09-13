@@ -2,6 +2,8 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 import json
 import os
+print(f"Running on port: {os.environ.get('PORT')}")
+
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "https://nn-exe.github.io"}})
