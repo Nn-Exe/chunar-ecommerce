@@ -1,6 +1,7 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 import json
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -12,6 +13,6 @@ with open('products.json') as f:
 def get_products():
     return jsonify(products)
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8000)
-
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
