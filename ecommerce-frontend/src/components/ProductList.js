@@ -1,10 +1,11 @@
 import React from 'react';
+import products from './products.json';  // Adjust the path to the location of your JSON file
 
-function ProductList({ products }) {
+function ProductList() {
   return (
     <div className="product-list">
       {products.length === 0 ? (
-        <p>Loading products...</p>
+        <p>No products available</p>
       ) : (
         products.map((product) => (
           <div key={product.id} className="product-card">

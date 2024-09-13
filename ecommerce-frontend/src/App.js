@@ -68,7 +68,8 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('https://chunar-ecommerce.onrender.com/api/products')
+    // fetch('https://chunar-ecommerce.onrender.com/api/products')
+    fetch('/products.json')
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error('Error fetching products:', error));
