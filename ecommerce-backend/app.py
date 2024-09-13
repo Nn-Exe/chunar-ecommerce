@@ -4,7 +4,7 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://nn-exe.github.io"}})
 
 with open('products.json') as f:
     products = json.load(f)
